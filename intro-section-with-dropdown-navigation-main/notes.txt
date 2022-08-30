@@ -1,0 +1,6 @@
+difference bw before:: and after::
+
+adding before and after does not mean you are applying the psuedo class on top or beneath the content, but it means
+you are adding that class before and after the actuall content. (it is just like adding a div before or after the content of a class)
+
+before and after does not apply to img cuz the dont really have an actual content except the image itself which is essentially not content.

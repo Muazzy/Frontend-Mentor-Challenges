@@ -1,0 +1,194 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* ### Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* font-family: 'Poppins', sans-serif; */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 3.5rem;
+    background-color: var(--Very-Light-Gray);
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+
+p {
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.light-fontweight {
+    font-weight: 200;
+}
+
+.text {
+    padding-top: 1em;
+    line-height: 1.8;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 100px; */
+}
+
+
+.card {
+    text-align: left;
+    margin: 1.5rem;
+    padding: 2rem;
+    width: 380px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 6px 10px 5px rgba(102, 98, 98, 0.1);
+    border-top: solid 4px;
+}
+
+.card>h3 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card>p {
+    padding-bottom: 2rem;
+}
+
+.image-div {
+    display: flex;
+    justify-content: end;
+
+}
+
+.column2>div {
+    margin-bottom: 1rem;
+}
+
+.div1 {
+    border-color: var(--Cyan);
+}
+
+.div2 {
+    border-color: var(--Red);
+}
+
+.div3 {
+    border-color: var(--Orange);
+}
+
+.div4 {
+    border-color: var(--Blue);
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+
+    .main-div {
+        flex-direction: column;
+    }
+
+    .div3 {
+        margin-top: 1rem;
+    }
+
+    .column2 {
+        margin: 0;
+    }
+
+    .div3 {
+        margin-top: 2.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 670px) {
+
+    body {
+        margin: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    body {
+        margin: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 0.8rem
+    }
+
+    .p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: auto;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .div3 {
+        margin-top: 1rem;
+    }
+}

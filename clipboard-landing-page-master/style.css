@@ -1,0 +1,330 @@
+:root {
+    /*  ## Colors */
+
+    /* ### Primary  */
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* ### Neutral */
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    /* font-size */
+
+    --h1: 45px;
+    --h2: 35px;
+    --h3: 23px;
+    --p-lg: 20px;
+    --p-md: 18px;
+    --p-sm: 16px;
+    --btn-fs: 18px;
+
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+p {
+    font-size: var(--p-lg);
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* header section */
+.head {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+/* to align buttons accordingly */
+.start {
+    text-align: start;
+}
+
+.end {
+    text-align: end;
+}
+
+/* for buttons */
+.custom-btn {
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: var(--btn-fs);
+}
+
+.green-btn {
+    background-color: var(--Strong-Cyan);
+    border-color: hsla(171, 66%, 44%, 0.432);
+}
+
+.purple-btn {
+    background-color: var(--Light-Blue);
+    border-color: hsla(233, 100%, 69%, 0.432);
+}
+
+.h-padding {
+    padding: 1rem;
+}
+
+.p-padding {
+    padding: 0 15% 1rem;
+}
+
+/* mac section */
+
+.mac-section .head-section {
+    text-align: center;
+    padding: 0 15% 2rem;
+}
+
+.mac-section img {
+    width: 100%;
+}
+
+.mac-section .body-section {
+    margin-left: -70px;
+}
+
+.mac-section .features {
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mac-section .feature {
+    padding: 1.5rem 1;
+}
+
+/* mob and tablet section */
+.mob-and-tab {
+    padding: 7% 15% 2%;
+    text-align: center;
+}
+
+
+.mob-and-tab img {
+    width: 100%;
+}
+
+.mob-and-tab .head-section {
+    padding-bottom: 1rem;
+}
+
+
+/* icon section */
+.icon-section {
+    text-align: center;
+}
+
+.row1 {
+    padding: 0 10%;
+}
+
+.row1 div {
+    padding: 3rem;
+}
+
+/* hero section */
+
+.hero-section {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: hsl(0, 0%, 96%);
+    padding: 3% 5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.footer .icon,
+.footer .contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon img {
+    width: 30%;
+}
+
+.footer .contact img {
+    padding: 1rem;
+}
+
+.footer .element {
+    padding: 0.7rem 0.5rem;
+}
+
+.footer a {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.footer a:hover,
+.footer .contact img:hover {
+    color: var(--Strong-Cyan);
+}
+
+@media (max-width: 993px) {
+    p {
+        font-size: var(--p-md);
+    }
+
+    .h-padding {
+        padding: 0;
+    }
+
+    .p-padding {
+        padding: 0.6rem;
+    }
+
+    /* header */
+
+    .head img {
+        width: 125px;
+        margin-bottom: 2rem;
+    }
+
+    .start,
+    .end {
+        text-align: center;
+    }
+
+    .custom-btn {
+        margin-bottom: 1rem;
+    }
+
+    .head,
+    .hero-section,
+    .mob-and-tab {
+        padding: 4%;
+    }
+
+    /* mac section */
+    .mac-section {
+        margin-bottom: 2rem;
+    }
+
+    .mac-section .body-section {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .mac-section .features {
+        text-align: center;
+    }
+
+    .mac-section .head-section {
+        text-align: center;
+        padding: 0;
+    }
+
+    .mac-section img {
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    /* .mob-and-tab sec */
+    .mob-and-tab .head-section {
+        padding-bottom: 0;
+    }
+
+    /* icon section */
+
+    .row1 {
+        padding: 0 10%;
+    }
+
+    .row1 div {
+        padding: 1rem;
+    }
+
+    .row2 img {
+        padding: 2rem;
+    }
+
+    /* footer */
+    .footer {
+        text-align: center;
+    }
+
+    .footer .icon img {
+        margin-bottom: 1rem;
+        width: 125px;
+    }
+}
+
+@media(max-width: 380px) {
+
+    .head img {
+        width: 25%;
+    }
+
+    h1 {
+        font-size: var(--h2);
+    }
+
+    h2 {
+        font-size: var(--h3);
+    }
+
+    h3 {
+        font-size: var(--p-lg);
+    }
+
+    p {
+        font-size: var(--p-sm);
+    }
+
+    .head {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+
+    .footer .icon img {
+        width: 25%;
+    }
+
+}

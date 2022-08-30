@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <img src="./images/logo.svg" class="snap-logo" alt="">
+    <div class="nav-items d-none">
+      <button class="close-btn">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>
+      <ul class="main-ul">
+        <li class="features-ul"> Features <span><img src="./images/icon-arrow-down.svg" alt=""
+              class="arrow-icon"></span></li>
+        <ul class="dropdown-ul features-li d-none">
+          <li><span><img src="./images/icon-todo.svg" alt=""></span>Todo List</li>
+          <li><span><img src="./images/icon-calendar.svg" alt=""></span>Calendar</li>
+          <li><span><img src="./images/icon-reminders.svg" alt=""></span>Reminders</li>
+          <li><span><img src="./images/icon-planning.svg" alt=""></span>Planning</li>
+        </ul>
+        <!-- this exp class turns the dropdown of company a flex so that its dropdownul has a absolute postition related to the company li above it self -->
+        <div class="exp">
+          <li class="company-ul"> Company <span><img src="./images/icon-arrow-down.svg" alt=""
+                class="arrow-icon"></span>
+          </li>
+          <ul class="dropdown-ul company-li d-none">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-btns">
+        <button class="btn">Login</button>
+        <button class="btn rg-btn">Register</button>
+      </div>
+    </div>
+    <button class="toggle-btn">
+      <img src="./images/icon-menu.svg" alt="">
+    </button>
+  </nav>
+
+  <!-- main-body-section -->
+  <main class="body-section">
+    <!-- text ie information section -->
+    <section class="info-section">
+      <h1> Make remote work </h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+
+      <button class="btn lm-btn">Learn more</button>
+
+      <div class="logos">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+
+    </section>
+
+    <!-- hero section (illustration) -->
+    <section class="hero-section">
+
+      <img src="./images/image-hero-desktop.png" class="desktop-hero d-none" alt="">
+
+      <img src="./images/image-hero-mobile.png" class="mobile-hero" alt="">
+
+    </section>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

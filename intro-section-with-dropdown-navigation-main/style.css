@@ -1,0 +1,413 @@
+:root {
+    --bg-white: hsl(0, 0%, 98%);
+    --fn-grey: hsl(0, 0%, 41%);
+    --hd-black: hsl(0, 0%, 8%);
+
+    /* - Weights: 500, 700 */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--bg-white);
+}
+
+h1 {
+    color: var(--hd-black);
+    font-size: 2rem;
+}
+
+p {
+    color: var(--fn-grey);
+    font-size: 1.125rem;
+}
+
+button {
+    /* to remove the defualt styling of button tag */
+    all: unset;
+}
+
+ul {
+    list-style-type: none;
+    color: var(--fn-grey);
+}
+
+/* 
+button:focus {
+    outline: orange 5px auto;
+} */
+
+.btn {
+    text-align: center;
+    background-color: var(--bg-white);
+    color: var(--fn-grey);
+    font-size: 1.125rem;
+    padding: 0.9rem 2rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in 0.15s;
+}
+
+.btn:hover {
+    color: var(--hd-black);
+}
+
+/* for hiding something using display none */
+
+/* body section */
+.body-section {
+    /* this is what it keeps it in middle */
+    margin: auto;
+
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* navbar */
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .snap-logo {
+    max-height: 100%;
+} */
+
+.nav-items {
+    min-width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: var(--bg-white);
+    padding: 1rem 1rem 0 1rem;
+    animation: open-close 0.2s linear;
+    transform-origin: top right;
+}
+
+
+.nav-items li {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: all ease-in 0.15s;
+}
+
+.nav-items li:hover {
+    color: var(--hd-black);
+}
+
+.nav-items span {
+    vertical-align: middle;
+}
+
+/* open and close nav buttons */
+.toggle-btn img,
+.close-btn img {
+    cursor: pointer;
+
+}
+
+/* features dropdown */
+.dropdown-ul {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-white);
+}
+
+.dropdown-ul span {
+    padding-right: 1rem;
+
+}
+
+.nav-btns {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    gap: 1rem;
+}
+
+.close-btn {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.rg-btn {
+    border: 1px solid var(--fn-grey);
+}
+
+.rg-btn:hover {
+    border-color: var(--hd-black);
+}
+
+/* text or info section */
+.info-section {
+    order: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-section h1,
+.info-section p {
+    padding: 1rem 0;
+}
+
+.logos {
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.logos img {
+    width: 100%;
+    /* if i did'nt add this the logos were streching vertically and it was looking bad */
+    height: min-content;
+}
+
+.lm-btn {
+    margin: 0.9rem 0;
+    background-color: var(--hd-black);
+    color: var(--bg-white);
+    border: 1px solid var(--hd-black);
+}
+
+.lm-btn:hover {
+    background-color: var(--bg-white);
+}
+
+/* hero (images) section */
+.hero-section {
+    order: 0;
+}
+
+.hero-section img {
+    width: 100%;
+
+}
+
+.shadow::before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    /* z-index: -1; */
+    background-color: rgba(0, 0, 0, 0.65);
+    animation: bg-blur-effect 0.2s linear;
+}
+
+/* i put this class down here to give it more specificity as our browser reads or applies html/css files from top to bottom */
+.d-none {
+    display: none;
+}
+
+
+.rotateimg180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* for animation */
+.nav-close-animation {
+    animation: close-open 0.2s linear;
+
+}
+
+/* desktop */
+
+@media (min-width: 900px) {
+
+    /* to make the shadow effect disappear incase if it was left on in mobile viewport  */
+    .shadow::before {
+        display: none;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 6vw, 6rem);
+    }
+
+    /* navbar */
+    .navbar {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    .nav-items {
+        width: 100%;
+        /* to make it reappear when its in mobile size */
+        display: flex;
+        min-width: unset;
+        height: auto;
+        flex-direction: row;
+        z-index: 0;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-white);
+        padding: 0 1rem;
+    }
+
+    .main-ul {
+        display: flex;
+        gap: 0.7rem;
+
+    }
+
+    .toggle-btn,
+    .close-btn {
+        display: none;
+    }
+
+    .nav-btns {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .dropdown-ul {
+        position: absolute;
+        top: 90%;
+        padding: 0.5rem;
+
+    }
+
+    .features-li {
+        left: -1%;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* main body section */
+    .body-section {
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+    }
+
+    /* info section */
+
+    .info-section {
+        order: 0;
+        text-align: left;
+        padding: 0 7%;
+        height: 100%;
+        align-items: center;
+    }
+
+    /* for margin */
+    .info-section h1,
+    .info-section p,
+    .info-section button {
+        margin-bottom: 2%;
+    }
+
+    /* to un hide the desktop hero image */
+    .desktop-hero {
+        display: block;
+    }
+
+    /* to hide the mobile hero image  */
+    .mobile-hero {
+        display: none;
+    }
+
+    /* logos row */
+    .logos {
+        margin-top: 3%;
+    }
+
+    .logos img {
+        width: 100%;
+        /* if i did'nt add this the logos were streching vertically and it was looking bad */
+        height: min-content;
+    }
+
+    /* hero (images) section */
+    .hero-section {
+        order: 1;
+        height: 100%;
+    }
+
+    .hero-section img {
+        height: 100%;
+
+    }
+
+
+}
+
+@media (min-width: 1000px) {
+    .nav-items {
+        margin-left: 3rem;
+    }
+
+    .main-ul {
+        gap: 1.5rem;
+
+    }
+
+}
+
+
+@keyframes open-close {
+    0% {
+        transform: scaleX(0);
+    }
+
+
+    100% {
+        transform: scaleX(1);
+
+    }
+}
+
+@keyframes close-open {
+    0% {
+        transform: scaleX(1);
+    }
+
+
+    100% {
+        transform: scaleX(0);
+
+    }
+}
+
+@keyframes bg-blur-effect {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.3);
+
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.65);
+
+
+    }
+}

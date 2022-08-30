@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    /* ### Neutral  */
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var();
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: var(--Light-grayish-blue);
+    margin: auto;
+}
+
+.main-container {
+    width: 1440px;
+    margin: 20px auto;
+    padding: 9rem;
+    display: grid;
+    grid-template-areas:
+        'first first second third'
+        'fourth fifeth fifeth third';
+    gap: 24px;
+}
+
+.card:nth-child(1) {
+    color: white;
+    grid-area: first;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-color: var(--Moderate-violet);
+    background-repeat: no-repeat;
+    background-position: top 10px right 50px;
+}
+
+.card:nth-child(2) {
+    grid-area: second;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.card:nth-child(3) {
+    grid-row: third;
+}
+
+.card:nth-child(4) {
+    grid-area: fourth;
+}
+
+.card:nth-child(5) {
+    grid-area: fifeth;
+    background-color: var(--Very-dark-blackish-blue);
+
+}
+
+.card:nth-child(2) h1,
+.card:nth-child(5) h1,
+.card:nth-child(2) h3,
+.card:nth-child(5) h3,
+.card:nth-child(1) h3,
+.card:nth-child(1) h1 {
+    color: rgba(255, 255, 255, 0.9);
+
+}
+
+.card:nth-child(1) .main p,
+.card:nth-child(2) .main p,
+.card:nth-child(5) .main p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card:nth-child(1) .header p,
+.card:nth-child(2) .header p,
+.card:nth-child(5) .header p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card img {
+    border-radius: 50%;
+    height: 30px;
+}
+
+.card .header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.card h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.card .main p {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.card .header p {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:1368px) {
+
+    .main-container {
+        width: auto;
+        margin: auto;
+        padding: 9rem 4rem;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 1.3rem;
+    }
+
+
+}
+
+@media (max-width:868px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .card {
+        padding: 1.3rem;
+        margin: 5px auto;
+    }
+
+
+}

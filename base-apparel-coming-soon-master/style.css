@@ -1,0 +1,224 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+    /* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+    /* white gradient */
+    /* background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: var(--Desaturated-Red);
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.mar-bottom {
+    margin-bottom: 2rem;
+}
+
+/* the main container where all the body content is  */
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+/* logo */
+.logo-mobile {
+    padding: 2.5% 6%;
+    display: none;
+}
+
+/* main info section */
+.info-section {
+    flex: 6;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 12%;
+}
+
+.heading h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--Dark-Grayish-Red);
+    line-height: 1;
+    letter-spacing: 0.8rem;
+}
+
+.heading span {
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+}
+
+.info-section .main {
+    /* top right bottom left */
+    padding: 20% 5% 20% 0;
+}
+
+.info-section .text {
+    line-height: 1.7;
+}
+
+.email-section {
+    margin-top: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+}
+
+.email-section input {
+    /* to have the same font as all the body */
+    font: inherit;
+
+    padding: 0 2rem;
+    /* z-index: -1; */
+    width: 100%;
+    height: 3.2rem;
+    border-radius: 2rem;
+    opacity: 1;
+    border: 1px var(--Desaturated-Red) solid;
+}
+
+
+.email-section input:focus {
+    /* to get rid of the defualt styles */
+    outline: none;
+    border: 2px solid var(--Desaturated-Red);
+
+}
+
+.email-section input:invalid {
+    border-color: var(--Soft-Red);
+}
+
+.email-section .error-icon {
+    /* z-index: ; */
+    margin-left: -5rem;
+    margin-right: 5rem;
+    height: 100%;
+
+}
+
+.email-section .submit-btn {
+    z-index: 1;
+    border: none;
+    /* gradient color */
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    margin-left: -4rem;
+    border-radius: 2rem;
+    height: 3.45rem;
+    padding: 0.8rem 2.5rem;
+    /* background-color: var(--Soft-Red); */
+
+}
+
+.email-section .submit-btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 86%, 92%), hsl(0, 65%, 85%));
+    box-shadow: 1px 2px 2px 2px hsla(0, 36%, 70%, 0.459);
+}
+
+.error-text {
+    /* margin-top: 10rem; */
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--Soft-Red);
+}
+
+/* hero image section */
+.hero-section {
+    /* height: 100vh; */
+    flex: 5;
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* mobile code */
+
+@media (max-width: 400px) {
+    .logo-mobile {
+        display: block;
+
+    }
+
+    .logo-mobile img {
+        margin: 1rem 0;
+        width: 40%;
+    }
+
+    /* to hide the desktop size logo */
+    .logo-desktop {
+        display: none;
+    }
+
+    .main-container {
+        width: auto;
+        margin: 0;
+        /* padding: 2.5% 6%; */
+
+        flex-direction: column;
+    }
+
+    .info-section {
+        padding-top: 2rem;
+        flex: auto;
+        order: 1;
+        text-align: center;
+    }
+
+    .heading h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1.3;
+        letter-spacing: 0.8rem;
+    }
+
+    .info-section .main {
+        padding: 0;
+    }
+
+    .hero-section {
+        order: 0;
+        flex: auto;
+        /* for the empty container to fill the background-image */
+        min-height: 250px;
+        background-image: url(/images/hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+}

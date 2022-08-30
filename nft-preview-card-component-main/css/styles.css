@@ -1,0 +1,183 @@
+/* variables */
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* ### Neutral */
+
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: var(--main-BG);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+p {
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+hr {
+    color: var(--blue-line);
+}
+
+span {
+    color: white;
+    /* font-weight: 400; */
+}
+
+span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.container {
+    flex-direction: column;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+
+    /* yaha p bhi same scene hai agar absolute krha tou nhi horha center q k phir vo "body" k according apne aap ko position karega*/
+    /* position: absolute; */
+    /* align-self: center;
+    justify-self: center; */
+    /* border: solid; */
+    border-radius: 10px;
+    /* this do all the magic of centering the div eg margin auto */
+    /* first margin value 5% will make it center vertically */
+    margin: 5px;
+    padding: 24px;
+    background-color: var(--card-BG);
+    width: 275px;
+
+}
+
+.eqbimg {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.heading {
+    font-weight: 600;
+}
+
+.ourEq {
+    color: var(--Soft-blue);
+}
+
+.icon {
+    display: inline;
+    margin-right: 2px;
+}
+
+.price {
+    display: inline;
+    position: relative;
+    bottom: 2px;
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+.time {
+    display: inline;
+    position: relative;
+    bottom: 2px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.inlinedivs {
+    display: inline;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.avatar {
+    height: 25px;
+    border: solid;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+.creation {
+    margin-left: 3px;
+    display: inline;
+    position: relative;
+    bottom: 8px;
+    font-weight: 300;
+    color: var(--Soft-blue)
+}
+
+.imagediv div {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* always remember to double check spellings and avoid any typos */
+.imagediv div:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.imagediv {
+    position: relative;
+}
+
+.imagediv div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: pink;
+}

@@ -1,0 +1,149 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    --Orange: hsl(25, 97%, 53%);
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Blue-less-opacity: hsla(213, 19%, 18%, 0.5);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --rating-buttons-bgc: hsla(214, 21%, 31%, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    color: var(--Light-Grey);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* for centering any element */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+}
+
+.container {
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    /* same dark blue color with 0.6 opacity */
+    background-color: hsla(213, 19%, 18%, 0.6);
+    max-width: 30rem;
+    width: 88%;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+.mar-bottom {
+    margin-bottom: 1.4rem;
+}
+
+.icon-star {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    /*same card color with less opacity*/
+    background-color: var(--rating-buttons-bgc);
+    padding: 1.2rem;
+}
+
+.icon-star img {
+    width: 1.3rem;
+}
+
+/* rating-buttons */
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-button {
+    width: 2rem;
+    height: 2rem;
+
+    padding: 1.2rem;
+    background-color: var(--rating-buttons-bgc);
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.rating-button:hover {
+    color: white;
+    background-color: var(--Orange);
+    cursor: pointer;
+
+}
+
+/*when the button got clicked*/
+.clicked {
+    background-color: var(--Medium-Grey);
+    color: white;
+}
+
+/* submit button */
+.submit-button {
+    margin-top: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    color: white;
+    background-color: var(--Orange);
+    /*have to apply this transition letter*/
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: var(--Orange);
+    cursor: pointer;
+
+}
+
+/* Thank you card */
+.thankyou-card {
+    text-align: center;
+}
+
+.rating-text {
+    color: var(--Orange);
+    opacity: 0.8;
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--rating-buttons-bgc);
+}
+
+
+/* for hiding a screen */
+
+.invisible {
+    display: none;
+}

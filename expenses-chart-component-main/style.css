@@ -1,0 +1,273 @@
+:root {
+    --red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --pale-orange: hsl(33, 100%, 98%);
+
+    /* max card size : 538px  (height: 660px)*/
+    /* min card size: 340px  (height: 535px)*/
+
+    /* bar width: 33px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--pale-orange);
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+/* horizontal rule */
+hr {
+    margin: 1.5rem 0;
+    border: 0.1px solid var(--cream);
+}
+
+/* for padding and border radius of the card */
+.balance-section,
+.main-section {
+    padding: 1.8rem 2rem;
+    border-radius: 1rem;
+}
+
+.main-container {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
+    max-width: 540px;
+}
+
+/* top section */
+.balance-section {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.balance-section p {
+    color: var(--pale-orange);
+    line-height: 1.5rem;
+}
+
+/* main section div  (main card)*/
+.main-section {
+    width: 100%;
+    background-color: var(--pale-orange);
+
+}
+
+.main-section h1,
+.main-section h2,
+.main-section h4 {
+    color: var(--dark-brown);
+}
+
+.main-section p {
+    color: var(--medium-brown);
+}
+
+/* chart section (graph or whatever)  */
+.graph {
+    padding: 1rem 1rem 0 1rem;
+    min-height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.days {
+    /* for making the hover price absolute position relative to this div */
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.days p {
+    text-align: center;
+}
+
+.bar {
+    border-radius: 0.3rem;
+    background-color: var(--red);
+    /* max-width: 33px; */
+    color: transparent;
+    transition: all ease-in-out 0.2s;
+}
+
+.bar:hover {
+    cursor: pointer;
+    background-color: hsl(10, 74%, 73%);
+
+}
+
+.blue {
+    background-color: var(--cyan);
+}
+
+.blue:hover {
+    background-color: hsl(187, 42%, 75%);
+
+}
+
+.main-section .hover-price {
+    /* for making it take space even when its not there */
+    position: absolute;
+    top: -2.5rem;
+
+
+    background-color: var(--dark-brown);
+    color: var(--pale-orange);
+    font-weight: 700;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* total value section */
+
+.totalB-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* to hide the display */
+.d-none {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+
+    .bar {
+        max-width: 40px;
+
+    }
+
+    .main-section .hover-price {
+        top: -2rem;
+    }
+
+    .main-container {
+        margin: auto 2rem;
+    }
+
+    .graph {
+        padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bar {
+        max-width: 33px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+    }
+
+    .main-container {
+        margin: auto 0.8rem;
+    }
+
+    .balance-section,
+    .main-section {
+        padding: 1rem 1.2rem;
+    }
+
+    .graph {
+        padding: 0.5rem 0.3rem 0 0.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-container {
+        margin: auto 0.5rem;
+        /* removing the constraint of min width of 340px */
+        min-width: auto;
+    }
+
+    .balance-section,
+    .main-section {
+        padding: 1rem 0.6rem;
+    }
+
+    .graph {
+        /* padding: 0.5rem 0rem 0 0.3rem; */
+        padding: 0.5rem 0 0 0;
+    }
+}

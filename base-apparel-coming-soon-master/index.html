@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  </style>
+</head>
+
+<body>
+  <div class="logo-mobile">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <div class="main-container">
+    <main class="info-section">
+      <div class="logo-desktop">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="main">
+        <div class="heading mar-bottom">
+          <h1><span>WE'RE</span> COMING SOON</h1>
+        </div>
+        <div class="text mar-bottom">
+          <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        </div>
+
+        <div class="email-section">
+          <!-- here autocomplete off will make sure to remove the value entered earlier in the email box on reload -->
+          <input type="email" id="emailAddress" placeholder="Email Address" value="" autocomplete="off" required>
+          <img src="./images/icon-error.svg" class="error-icon invisible" alt="">
+          <button type="submit" class="submit-btn">
+            <img src="./images/icon-arrow.svg" alt="">
+          </button>
+
+        </div>
+        <div class="error-text invisible">
+          Please provide a valid email
+        </div>
+      </div>
+    </main>
+    <aside class="hero-section">
+      <!-- empty container for hero image -->
+    </aside>
+  </div>
+
+  <!-- you cannot put another element inside the input element -->
+  <!-- <input type="submit" value="" > -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
