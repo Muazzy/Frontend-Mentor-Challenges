@@ -4,4 +4,4 @@
 
 - Note: To visit the live site of any of the projects, just add the repository name in front of the following link: https://muazzy.github.io/Frontend-Mentor-Challenges/
 
-for Example: https://muazzy.github.io/Frontend-Mentor-Challenges/faq-accordion-card-main
+For Example: https://muazzy.github.io/Frontend-Mentor-Challenges/faq-accordion-card-main
