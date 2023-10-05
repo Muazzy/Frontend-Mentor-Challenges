@@ -2,11 +2,7 @@
 
 This repository consists of all the challenges I have completed from Frontend Mentor.
 
-To visit the live site of any of the projects, just add the repository name in front of the following link: [https://muazzy.github.io/Frontend-Mentor-Challenges](https://muazzy.github.io/Frontend-Mentor-Challenges/)
-- Example: [Base Apparel Coming Soon](https://muazzy.github.io/Frontend-Mentor-Challenges/base-apparel-coming-soon-master)
-
----
-
+You can visit the live site of every project by clicking on it!
 ## Completed Challenges
 
 1. **Base Apparel Coming Soon**
