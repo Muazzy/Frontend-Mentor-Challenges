@@ -16,12 +16,16 @@ To visit the live site of any of the projects, just add the repository name in f
    </a>
 </div>
 
+<br>
+
 2. **Clipboard Landing Page**
 <div>
    <a href="https://muazzy.github.io/Frontend-Mentor-Challenges/clipboard-landing-page-master">
    <img src="./screenshots/clipboard-landing-page-master.png" alt="Clipboard Landing Page" height="300">
    </a>
 </div>
+
+<br>
 
 3. **Expenses Chart Component**
 <div>
@@ -30,12 +34,16 @@ To visit the live site of any of the projects, just add the repository name in f
    </a>
 </div>
 
+<br>
+
 4. **FAQ Accordion Card**
 <div>
    <a href="https://muazzy.github.io/Frontend-Mentor-Challenges/faq-accordion-card-main">
    <img src="./screenshots/faq-accordion-card-main.png" alt="FAQ Accordion Card" height="300">
    </a>
 </div>
+
+<br>
 
 5. **Four Card Feature Section**
 <div>
@@ -44,12 +52,16 @@ To visit the live site of any of the projects, just add the repository name in f
    </a>
 </div>
 
+<br>
+
 6. **Huddle Landing Page with Single Introductory Section**
 <div>
    <a href="https://muazzy.github.io/Frontend-Mentor-Challenges/huddle-landing-page-with-single-introductory-section-master">
    <img src="./screenshots/huddle-landing-page-with-single-introductory-section-master.png" alt="Huddle Landing Page" height="300">
    </a>
 </div>
+
+<br>
 
 7. **Interactive Rating Component**
 <div>
@@ -58,6 +70,8 @@ To visit the live site of any of the projects, just add the repository name in f
    </a>
 </div>
 
+<br>
+
 8. **Intro Section with Dropdown Navigation**
 <div>
    <a href="https://muazzy.github.io/Frontend-Mentor-Challenges/intro-section-with-dropdown-navigation-main">
@@ -65,12 +79,16 @@ To visit the live site of any of the projects, just add the repository name in f
    </a>
 </div>
 
+<br>
+
 9. **NFT Preview Card Component**
 <div>
    <a href="https://muazzy.github.io/Frontend-Mentor-Challenges/nft-preview-card-component-main">
    <img src="./screenshots/nft-preview-card-component-main.png" alt="NFT Preview Card Component" height="300">
    </a>
 </div>
+
+<br>
 
 10. **Testimonials Grid Section**
 <div>
