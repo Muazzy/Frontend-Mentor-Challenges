@@ -16,7 +16,8 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-single-page-coming-soon-site-KkpqSb3MSY)
-- Live Site URL: [Live site](https://muazzy.github.io/single-page-coming-soon/)
+- Live Site URL: [Live site](https://muazzy.github.io/Frontend-Mentor-Challenges/base-apparel-coming-soon-master)
+
 
 ### Built with
 

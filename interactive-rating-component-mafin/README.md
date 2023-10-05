@@ -16,7 +16,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-with-js-_I6-aSso2B)
-- Live Site URL: [Live site](https://muazzy.github.io/interactive-rating-component-with-js/)
+- Live Site URL: [Live site](https://muazzy.github.io/Frontend-Mentor-Challenges/interactive-rating-component-mafin)
 
 ### Built with
 

@@ -16,7 +16,8 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/made-with-vanila-html-and-css-flexbox-and-media-quaries-7aVaa-FkjT)
-- Live Site URL: [Live site](https://muazzy.github.io/clipboard-landing-page/)
+- Live Site URL: [Live site](https://muazzy.github.io/Frontend-Mentor-Challenges/clipboard-landing-page-master)
+
 
 ### Built with
 

@@ -16,7 +16,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-using-css-grid-grid-template-areas-MxFrwpTVX6)
-- Live Site URL: [Live site](https://muazzy.github.io/testimonials-grid-section-frontend-mentor-challenge/)
+- Live Site URL: [Live site](https://muazzy.github.io/Frontend-Mentor-Challenges/testimonials-grid-section-main)
 
 ### Built with
 

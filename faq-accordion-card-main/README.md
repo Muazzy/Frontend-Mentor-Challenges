@@ -10,10 +10,11 @@
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-single-page-coming-soon-site-KkpqSb3MSY)
-- Live Site URL: [Live site](https://muazzy.github.io/interactive-FAQ-section/)
+- Live Site URL: [Live site](https://muazzy.github.io/Frontend-Mentor-Challenges/faq-accordion-card-main)
+
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS Flexbox
-- Vanila Javascript
+- Javascript

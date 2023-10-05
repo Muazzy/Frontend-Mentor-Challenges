@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Muazzy/frontend-mentor-nft-preview-component)
-- Live Site URL: [Add live site URL here](https://muazzy.github.io/frontend-mentor-nft-preview-component/)
+- Live Site URL: [Add live site URL here](https://muazzy.github.io/Frontend-Mentor-Challenges/nft-preview-card-component-main)
 
 ### Built with
 
